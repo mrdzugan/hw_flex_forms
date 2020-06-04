@@ -1,0 +1,114 @@
+@import "./assets/css/reset.css";
+
+:root {
+    --primary-color: white;
+    color: var(--primary-color);
+    font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #08424d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("https://wallpapers.net/aerial-view-of-stones-in-the-water-hd-wallpaper/download/3840x2160.jpg");
+}
+
+.contact-form-container {
+    margin: 10px;
+    padding: 40px;
+    min-width: 500px;
+    max-width: 1000px;
+    width: 100%;
+    background: transparent;
+    --shadow-value: 0 0 15px 7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: var(--shadow-value);
+    -moz-box-shadow: var(--shadow-value);
+    box-shadow: var(--shadow-value);
+}
+
+.contact-form-container > form {
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form-header {
+    font-weight: bold;
+    font-size: 28px;
+    margin: 20px 0;
+}
+
+.contact-form-description {
+    margin: 30px 0;
+}
+
+.row > textarea {
+    height: 100px;
+}
+
+.row > label {
+    padding-top: 10px;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.row {
+    padding: 5px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.row > input, select, textarea {
+    flex: 1;
+    margin: 1px 5px;
+    height: 35px;
+    padding: 5px 10px;
+    min-width: 225px;
+}
+
+input::placeholder {
+    opacity: 50%;
+}
+
+input[type="number"]:last-child {
+    flex-grow: 2;
+}
+
+#msg-sbj {
+    background-color: white;
+}
+
+.submit-btn {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    width: calc(100% - 200px);
+}
+
+.submit-btn-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%
+}
+
+.submit-btn:hover {
+    background-color: white;
+    color: black;
+}

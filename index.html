@@ -6,6 +6,41 @@
 	<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-
+<section class="contact-form-container">
+	<h1 class="contact-form-header">Contact form</h1>
+	<p class="contact-form-description">Please fill in your information and we'll be sending your order.</p>
+	<form>
+		<div class="row">
+			<label for="name">Your name</label>
+			<input type="text" id="name" placeholder="first name">
+			<input type="text" id="surname" placeholder="last name">
+		</div>
+		<div class="row">
+			<label for="email">Your email</label>
+			<input type="email" id="email" placeholder="your_mail@mail.com">
+		</div>
+		<div class="row">
+			<label for="phone">Phone *</label>
+			<input type="number" placeholder="000" id="phone" required>
+			<input type="number" placeholder="000" required>
+			<input type="number" placeholder="0000" required>
+		</div>
+		<div class="row">
+			<label for="msg-sbj">Message subject *</label>
+			<select id="msg-sbj" required>
+				<option>Other</option>
+				<option>Lalala</option>
+			</select>
+		</div>
+		<div class="row">
+			<label for="msg">Message *</label>
+			<textarea id="msg" cols="30" rows="10" required></textarea>
+		</div>
+		<hr>
+		<div class="submit-btn-wrap">
+			<input type="submit" class="submit-btn" value="submit form">
+		</div>
+	</form>
+</section>
 </body>
 </html>
